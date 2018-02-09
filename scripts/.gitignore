@@ -1,4 +1,16 @@
-bin2c
+#
+# Generated files
+#
 conmakehash
 kallsyms
-
+pnmtologo
+unifdef
+ihex2fw
+recordmcount
+docproc
+check-lc_ctype
+sortextable
+asn1_compiler
+extract-cert
+sign-file
+bin2c

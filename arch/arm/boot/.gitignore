@@ -6,3 +6,5 @@ uImage
 vmlinux
 lib1funcs.S
 piggy.gzip
+*.dtb
+zImage-dtb
