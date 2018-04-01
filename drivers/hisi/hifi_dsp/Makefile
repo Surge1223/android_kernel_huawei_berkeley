@@ -29,13 +29,13 @@ EXTRA_CFLAGS += -DMULTI_MIC
 EXTRA_CFLAGS += -Idrivers/hisi/hifi_mailbox/mailbox
 EXTRA_CFLAGS += -Idrivers/hisi/hifi_mailbox/ipcm
 EXTRA_CFLAGS += -Isound/usb/hifi/
-ifneq ($(TARGET_BUILD_VARIANT),user)
+ifneq ($(TARGET_BUILD_VARIANT),userdebug)
 EXTRA_CFLAGS += -DENABLE_HIFI_DEBUG
 endif
 
 obj-$(CONFIG_HIFI_DSP_ONE_TRACK)	+= hifi_lpp.o
 obj-$(CONFIG_HIFI_DSP_ONE_TRACK)	+= hifi_om.o
-ifneq ($(TARGET_BUILD_VARIANT),user)
+ifneq ($(TARGET_BUILD_VARIANT),userdebug)
 obj-$(CONFIG_HIFI_DSP_ONE_TRACK)	+= memcpy_opt.o
 endif
 

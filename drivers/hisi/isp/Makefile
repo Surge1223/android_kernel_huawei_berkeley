@@ -1,4 +1,4 @@
-ifneq ($(TARGET_BUILD_VARIANT),user)
+ifneq ($(TARGET_BUILD_VARIANT),userdebug)
 EXTRA_CFLAGS += -DDEBUG_HISI_ISP
 endif
 

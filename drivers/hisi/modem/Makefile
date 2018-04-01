@@ -69,6 +69,6 @@ obj-$(CONFIG_HISI_BALONG_MODEM) +=ims/
 endif
 
 #add modem user
-ifeq ($(TARGET_BUILD_VARIANT),user)
+ifeq ($(TARGET_BUILD_VARIANT),userdebug)
 KBUILD_CFLAGS += -DCHOOSE_MODEM_USER
 endif

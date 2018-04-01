@@ -8,7 +8,7 @@ EXTRA_CFLAGS += -Iinclude/linux/hisi/
 EXTRA_CFLAGS += -Idrivers/hisi/mntn/blackbox/platform_hifi/
 EXTRA_CFLAGS += -Idrivers/hisi/soundtrigger/
 
-ifneq ($(TARGET_BUILD_VARIANT),user)
+ifneq ($(TARGET_BUILD_VARIANT),userdebug)
 	EXTRA_CFLAGS += -DENABLE_HI64XX_HIFI_DEBUG
 endif
 ifeq ($(CONFIG_HIFI_IPC_3660),y)

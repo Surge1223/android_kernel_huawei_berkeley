@@ -1,6 +1,6 @@
 KCOV_INSTRUMENT := n
 
-ifneq ($(TARGET_BUILD_VARIANT),user)
+ifneq ($(TARGET_BUILD_VARIANT),userdebug)
 ccflags-y += -DDEBUG_TUI
 ccflags-y += -DDEF_ENG
 endif
